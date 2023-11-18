@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -9,7 +8,7 @@ const VerifyToken = () => {
 
   useEffect(() => {
    
-    fetch(`https://password-reset-flow-task-guvi.onrender.com/api/verify-token/${token}`, {
+    fetch(`https://password-reset-flow-task-guvi.onrender.com/verify-token/${token}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

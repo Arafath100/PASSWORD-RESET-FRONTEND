@@ -30,9 +30,11 @@ const Login = () => {
           body: JSON.stringify(formData),
         }
       );
+      console.log('Response:', response);
 
       if (response.ok) {
         const data = await response.json();
+        const { token, userName } = data;
 
         localStorage.setItem("token", token);
         localStorage.setItem("userName", userName);
