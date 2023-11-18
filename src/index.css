@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.nav-item a.nav-link:hover {
+  background-color: #292d30;
+  transition: all 0.4s;
+  border-radius: .4rem;
+}
+
+/* Signup.css */
+.form-container {
+  background: #000;
+  padding: 20px;
+  border-radius: .4rem;
+}
+
+#container {
+  background-color: #000;
+  border-radius: .4rem;
+  padding: 18px;
+  color: #000;
+}
+
+.header-container {
+  background: #000;
+  padding: 20px;
+  border-radius: .4rem;
+}
+
+.btn-submit {
+  filter: drop-shadow(1px 1px 2px black);
+  color: white;
+}
+
+.card {
+  background-color: transparent;
+  color: rgb(239, 219, 219);
+  font-family: 'poppins', sans-serif;
+}
+
+#heading {
+  font-weight: 900;
+  backdrop-filter: blur(8px);
+}
