@@ -50,7 +50,7 @@ const Dashboard = () => {
             {userData ? (
               <div>
                 <h4 className="mb-3" id="heading">
-                  Welcome {userName}😻
+                  Welcome {userName}
                 </h4>
                 <hr />
                 <p className="card-text">User ID: {userData.user.userId}</p>
