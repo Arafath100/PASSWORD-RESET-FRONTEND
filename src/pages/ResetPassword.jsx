@@ -6,13 +6,15 @@ const ResetPassword = () => {
   const [formData, setFormData] = useState({
     newPassword: "",
   });
-  const navigate = useNavigate();
-  const { token } = useParams();
+  const navigate = useNavigate(); // Access the navigation object for routing
+  const { token } = useParams(); // Get the token from the URL params
 
+  // Update form data when input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Handle form submission for password reset
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -68,7 +70,8 @@ const ResetPassword = () => {
             >
               Submit
             </button>
-          </div><br />
+          </div>
+          <br />
         </form>
       </div>
     </div>

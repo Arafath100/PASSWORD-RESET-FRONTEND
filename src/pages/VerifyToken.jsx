@@ -8,7 +8,7 @@ const VerifyToken = () => {
 
   useEffect(() => {
    
-    fetch(`https://password-reset-flow-task-guvi.onrender.com/verify-token/${token}`, {
+    fetch(`https://password-reset-flow-task-guvi.netlify.app/verify-token/${token}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

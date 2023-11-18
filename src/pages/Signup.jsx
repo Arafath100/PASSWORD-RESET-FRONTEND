@@ -12,10 +12,10 @@ const Signup = () => {
     password: "",
     mobileNumber: "",
   });
-  const navigate = useNavigate();
-  const [passwordError, setPasswordError] = useState("");
- 
+  const navigate = useNavigate(); // Access the navigation object for routing
+  const [passwordError, setPasswordError] = useState(""); // State for password error message
 
+  // Handle form input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -32,6 +32,7 @@ const Signup = () => {
     }
   };
 
+  // Handle form submission for user signup
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -53,11 +54,9 @@ const Signup = () => {
       );
 
       if (response.ok) {
-        // Sign-up success
         toast.success("Sign up successful");
         navigate("/login");
       } else {
-        // Sign-up failure
         toast.error("Sign up failed");
       }
     } catch (error) {
@@ -90,7 +89,7 @@ const Signup = () => {
               name="userName"
               onChange={handleChange}
               required
-              placeholder='UserName'
+              placeholder="UserName"
             />
           </div>
           <div className="mb-3">
@@ -104,7 +103,7 @@ const Signup = () => {
               name="mobileNumber"
               onChange={handleChange}
               required
-              placeholder='Mobile Number'
+              placeholder="Mobile Number"
             />
           </div>
           <div className="mb-3">
@@ -118,7 +117,7 @@ const Signup = () => {
               name="email"
               onChange={handleChange}
               required
-              placeholder='Email'
+              placeholder="Email"
             />
           </div>
           <div className="mb-3">
@@ -132,11 +131,10 @@ const Signup = () => {
               name="password"
               onChange={handleChange}
               required
-              placeholder='Password'
+              placeholder="Password"
             />
             {passwordError && <p className="text-danger">{passwordError}</p>}
           </div>
-
 
           <br />
           <div className="text-center">

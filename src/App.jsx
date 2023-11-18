@@ -18,8 +18,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ToastContainer />
+        <ToastContainer /> {/* ToastContainer for displaying notifications */}
         <Header />
+        {/* Define routes for different pages */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<Signup />} />

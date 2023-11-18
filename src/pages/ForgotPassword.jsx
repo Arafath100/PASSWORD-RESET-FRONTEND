@@ -5,8 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const ForgotPassword = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(""); // State for email input
 
+  // Function to handle password reset
   const handleReset = async (e) => {
     e.preventDefault();
 
@@ -22,6 +23,7 @@ const ForgotPassword = () => {
         }
       );
 
+      // Check if the password reset request was successful
       if (response.ok) {
         toast.success("Password reset link sent to your email");
       } else {
@@ -58,7 +60,10 @@ const ForgotPassword = () => {
           </div>
           <br />
           <div className="text-center">
-            <button type="submit" className="btn w-50 btn-submit btn-outline-primary">
+            <button
+              type="submit"
+              className="btn w-50 btn-submit btn-outline-primary"
+            >
               Reset Password
             </button>
           </div>

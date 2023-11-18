@@ -4,15 +4,14 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div>
-      {/* <br /> */}
       <hr />
-      <div
-        className="container text-center text-white fw-bold"
-        id="container"
-      >
+      <div className="container text-center text-white fw-bold" id="container">
         <hr />
         <div>
-          <h1 className="text-uppercase  bg-info bg-opacity-10 border border-info rounded">Welcome to Password Reset App</h1><hr />
+          <h1 className="text-uppercase  bg-info bg-opacity-10 border border-info rounded">
+            Welcome to Password Reset App
+          </h1>
+          <hr />
           <p className="lead">
             Experience enhanced security in password management.
           </p>

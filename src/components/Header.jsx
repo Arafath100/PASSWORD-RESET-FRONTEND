@@ -10,9 +10,10 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userName");
-    window.location.href = "/login";
+    window.location.href = "/login"; // Redirect to login page after logout
   };
 
+  // Conditions to determine which navigation links to display based on the current URL path
   const shouldShowLogin = !["/login", "/dashboard"].includes(location.pathname);
   const shouldShowSignup = !["/signup", "/dashboard"].includes(
     location.pathname

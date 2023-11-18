@@ -12,10 +12,12 @@ const Login = () => {
   });
   const navigate = useNavigate();
 
+  // Update form data when input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Handle form submission for login
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -30,7 +32,7 @@ const Login = () => {
           body: JSON.stringify(formData),
         }
       );
-      console.log('Response:', response);
+      console.log("Response:", response);
 
       if (response.ok) {
         const data = await response.json();
@@ -50,6 +52,7 @@ const Login = () => {
     }
   };
 
+  // Navigate to forgot password page
   const handleForgotPassword = () => {
     navigate("/forgot-password");
   };
